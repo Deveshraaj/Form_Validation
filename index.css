@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-g {
+  background-image: linear-gradient(140deg, #d9cfd6ed, #db3fe7 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 65px;
+  font-family: "Times New Roman", Times, serif;
+}
+.hero-section {
+  width: 100%;
+  height: 95vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-section::after {
+  content: "";
+  z-index: -10;
+  position: absolute;
+  top: -100px;
+  right: -50%; /* Adjust the right position to center the curve */
+  width: 200%; /* Double the width to cover the entire hero-section */
+  height: 85vh;
+  background-image: url(bgimage.jpeg); /* Transparent pink color */
+  border-bottom-left-radius: 80%;
+  border-bottom-right-radius: 80%;
+}.input-field {
+  font-size: 16px; /* Adjust the size as needed */
+}
+
+.text-sm {
+  font-size: 16px; /* Adjust the size as needed */
+}
+
+/* Increase the size for specific fields */
+#fullName,
+#email,
+#phone,
+#address,
+#resume {
+  font-size: 16px; /* Adjust the size as needed */
+}
+
+
